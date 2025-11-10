@@ -1,4 +1,4 @@
 <?php
-interface PaymentGateway {
+interface PaymentGatewayInterface {
     public function sendPayment(float $amount): string;
 }

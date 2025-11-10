@@ -2,9 +2,9 @@
 
 class PaymentProcessor
 {
-    protected PaymentGateway $gateway;
+    protected PaymentGatewayInterface $gateway;
 
-    public function __construct(PaymentGateway $gateway)
+    public function __construct(PaymentGatewayInterface $gateway)
     {
         $this->gateway = $gateway;
     }
