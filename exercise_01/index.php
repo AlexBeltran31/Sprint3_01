@@ -1,6 +1,6 @@
 <?php
 require 'resultsData.php';
-require 'printResults';
+require 'printResults.php';
 require 'DataManager.php';
 require 'athlete.php';
 require 'event.php';
@@ -17,8 +17,8 @@ $dataManager->addAthlete($athlete2);
 $dataManager->addEvent($event1);
 $dataManager->addEvent($event2);
 
-$result1 = new Result($athlete1, $event1, "Gold");
-$result2 = new Result($athlete2, $event2, "Gold");
+$result1 = new ResultsData($athlete1, $event1, "Gold");
+$result2 = new ResultsData($athlete2, $event2, "Gold");
 
 $dataManager->addResults($result1);
 $dataManager->addResults($result2);

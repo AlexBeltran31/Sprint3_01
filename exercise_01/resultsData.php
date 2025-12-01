@@ -1,5 +1,5 @@
 <?php
-class Result {
+class ResultsData {
     public Athlete $athlete;
     public Event $event;
     private string $medal;

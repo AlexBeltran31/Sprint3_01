@@ -10,7 +10,7 @@ public function addAthlete(Athlete $athlete) {
 public function addEvent(Event $event) {
     $this->events[] = $event;
 }
-public function addResults(Result $result) {
-    $this->results[] = $result;
+public function addResults(ResultsData $resultsData) {
+    $this->results[] = $resultsData;
 }
 }
