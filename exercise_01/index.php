@@ -1,5 +1,6 @@
 <?php
-require 'result.php';
+require 'resultsData.php';
+require 'printResults';
 require 'DataManager.php';
 require 'athlete.php';
 require 'event.php';
@@ -22,4 +23,4 @@ $result2 = new Result($athlete2, $event2, "Gold");
 $dataManager->addResults($result1);
 $dataManager->addResults($result2);
 
-Result::printResults($dataManager);
+printResults::printResults($dataManager);
